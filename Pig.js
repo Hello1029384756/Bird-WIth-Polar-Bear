@@ -5,6 +5,12 @@ class Pig extends BaseClass {
     this.Visiblity = 255;
   }
 
+score() {
+  if(this.Visiblity < 0 && this.Visiblity > -1010) {
+    score = score + 5
+  }
+}
+
  display(){
    //console.log(this.body.speed);
    if(this.body.speed < 3){
@@ -20,7 +26,4 @@ class Pig extends BaseClass {
    }
    
  }
-
-
-
 };
